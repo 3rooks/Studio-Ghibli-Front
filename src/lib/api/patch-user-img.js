@@ -3,10 +3,12 @@ import emitEvent from '../events/alertEvent';
 import getUserProfile from './get-user-profile';
 
 const pathUserImg = async (token, user, setUser) => {
+	console.log(user);
 	try {
 		const res = await fetch(API_FETCH.PATCH_IMG, {
-			method: 'POST',
+			method: 'PATCH',
 			headers: {
+				'Content-Type': 'multipart/form-data',
 				authorization: `Bearer ${token}`
 			},
 			body: user
