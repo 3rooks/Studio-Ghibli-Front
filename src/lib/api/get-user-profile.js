@@ -16,6 +16,8 @@ const getUserProfile = async (token, setUser) => {
 			setUser(results);
 		} else if (res.status === 401) {
 			emitEvent('unauthorized');
+		} else {
+			emitEvent('error');
 		}
 	} catch (error) {
 		console.log(error);

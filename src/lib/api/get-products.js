@@ -14,7 +14,7 @@ const getProducts = async (setProducts) => {
 			const { results } = await res.json();
 			setProducts(results);
 		} else {
-			emitEvent('error get products');
+			emitEvent('error');
 		}
 	} catch (error) {
 		console.log(error);

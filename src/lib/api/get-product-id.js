@@ -17,6 +17,8 @@ const getProductById = async (id, setProductId) => {
 			emitEvent('invalid params');
 		} else if (res.status === 404) {
 			emitEvent('product not exist');
+		} else {
+			emitEvent('error');
 		}
 	} catch (error) {
 		console.log(error);

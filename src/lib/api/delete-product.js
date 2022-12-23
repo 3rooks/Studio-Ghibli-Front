@@ -24,6 +24,8 @@ const deleteProduct = async (token, cartId, productId, setUserCart) => {
 			emitEvent('unauthorized');
 		} else if (res.status === 404) {
 			emitEvent('product not exist');
+		} else {
+			emitEvent('error');
 		}
 	} catch (error) {
 		console.log(error);

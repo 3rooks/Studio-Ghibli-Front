@@ -20,6 +20,8 @@ const postUserPayment = async (token, data) => {
 			emitEvent('unauthorized');
 		} else if (res.status === 404) {
 			emitEvent('cart not exist');
+		} else {
+			emitEvent('error');
 		}
 	} catch (error) {
 		console.log(error);

@@ -30,6 +30,8 @@ const deleteUser = async (
 			emitEvent('invalid inputs');
 		} else if (res.status === 401) {
 			emitEvent('unauthorized');
+		} else {
+			emitEvent('error');
 		}
 	} catch (error) {
 		console.log(error);

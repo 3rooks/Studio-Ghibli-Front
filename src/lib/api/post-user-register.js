@@ -17,6 +17,8 @@ const postUserRegister = async (user, navigate) => {
 			emitEvent('invalid inputs');
 		} else if (res.status === 409) {
 			emitEvent('user already exist');
+		} else {
+			emitEvent('error');
 		}
 	} catch (error) {
 		console.log(error);

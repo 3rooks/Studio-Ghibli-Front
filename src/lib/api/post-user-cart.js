@@ -24,6 +24,8 @@ const postUserCart = async (token, cartId, productId) => {
 			emitEvent('product not exist');
 		} else if (res.status === 409) {
 			emitEvent('product already exists in your cart');
+		} else {
+			emitEvent('error');
 		}
 	} catch (error) {
 		console.log(error);

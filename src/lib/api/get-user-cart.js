@@ -20,6 +20,8 @@ const getUserCart = async (token, id, setUserCart) => {
 			emitEvent('unauthorized');
 		} else if (res.status === 404) {
 			emitEvent('cart not exist');
+		} else {
+			emitEvent('error');
 		}
 	} catch (error) {
 		console.log(error);
