@@ -17,6 +17,8 @@ const pathUserImg = async (token, user, setUser) => {
 			emitEvent('image updated');
 		} else if (res.status === 503) {
 			emitEvent('something wrong, try again');
+		} else {
+			emitEvent('error');
 		}
 	} catch (error) {
 		console.log(error);

@@ -8,7 +8,7 @@ export const API_FETCH = {
 	USER_CART: URI + 'api/carts',
 	GET_ALL_PRODUCTS: URI + 'api/products',
 	GET_PRODUCT: URI + 'api/products',
-	PATCH_IMG: URI + 'api/update-img',
+	PATCH_IMG: URI + 'api/update-image',
 	PATCH_USERNAME: URI + 'api/update-username',
 	PATCH_EMAIL: URI + 'api/update-email',
 	PATCH_PASS: URI + 'api/update-password',
