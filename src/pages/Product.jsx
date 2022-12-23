@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import Loader from '../components/loader/loader';
+import Loader from '../components/loader/Loader';
 import ProductInfo from '../components/ProductInfo';
 import getProductById from '../lib/api/get-product-id';
 
