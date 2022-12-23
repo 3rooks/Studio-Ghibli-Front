@@ -8,7 +8,6 @@ const pathUserImg = async (token, user, setUser) => {
 		const res = await fetch(API_FETCH.PATCH_IMG, {
 			method: 'PATCH',
 			headers: {
-				'Content-Type': 'multipart/form-data',
 				authorization: `Bearer ${token}`
 			},
 			body: user
