@@ -5,7 +5,7 @@ import getUserProfile from './get-user-profile';
 const pathUserImg = async (token, user, setUser) => {
 	try {
 		const res = await fetch(API_FETCH.PATCH_IMG, {
-			method: 'PATCH',
+			method: 'POST',
 			headers: {
 				authorization: `Bearer ${token}`
 			},
