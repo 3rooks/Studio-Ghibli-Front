@@ -1,8 +1,12 @@
-@import url(./reserts.css);
+@import url('./resets.css');
+@import url('./fonts.css');
 
-body {
-	background-image: url('/bg.png');
-	color: white;
-	background-size: auto;
-	background-position: center;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#root {
+	position: relative;
+	min-height: 100vh;
+	padding-bottom: 2rem;
 }
