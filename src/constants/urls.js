@@ -1,4 +1,4 @@
-const URI = import.meta.env.VITE_LOCAL_HOST;
+const URI = import.meta.env.VITE_BACK_URI;
 
 export const API_FETCH = {
 	USER_LOGIN: URI + 'api/login',
