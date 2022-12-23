@@ -1,4 +1,4 @@
-import Loader from './loader/loader';
+import Loader from './loader/Loader';
 import ProductCard from './ProductCard';
 
 const ProductsContainer = ({ products }) => (

@@ -6,7 +6,7 @@ import PatchEmail from '../components/forms/patch-email';
 import PatchImg from '../components/forms/patch-img';
 import PatchPassword from '../components/forms/patch-password';
 import PatchUsername from '../components/forms/patch-username';
-import Loader from '../components/loader/loader';
+import Loader from '../components/loader/Loader';
 import Modal from '../components/modal/Modal';
 import { UserContext } from '../lib/context/UserContext';
 
