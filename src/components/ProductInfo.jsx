@@ -24,7 +24,7 @@ const ProductInfo = ({ product }) => {
 
 	return (
 		<article className='block gap-10 px-6 sm:block md:flex md:px-12 lg:px-28 xl:px-60 2xl:px-80'>
-			<div className='w-full md:w-1/2 mb-4'>
+			<div className='w-full md:w-1/2 mb-4 leading-8'>
 				<div className={user && 'mb-3'}>
 					{user && (
 						<Button
@@ -37,7 +37,7 @@ const ProductInfo = ({ product }) => {
 					)}
 				</div>
 				<p>
-					<b>Price: </b> {price}$
+					<b>Price: </b>${price}
 				</p>
 				<p>
 					<b>Title: </b>
@@ -65,7 +65,7 @@ const ProductInfo = ({ product }) => {
 				</p>
 				<p>
 					<b>Description: </b>
-					{description}
+					<i>{description}</i>
 				</p>
 				<a href={info} target='_blank' rel='noopener noreferrer'>
 					<b>More info...</b>

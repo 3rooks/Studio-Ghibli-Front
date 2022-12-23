@@ -7,14 +7,13 @@ const ProductCard = ({ product }) => {
 		<article className='shadow-md rounded-md overflow-hidden relative pb-7'>
 			<img src={image} />
 			<div className='px-4 py-2'>
-				<p>
-					Title: <b>{title}</b>
+				<p className='text-ellipsis whitespace-nowrap overflow-hidden text-center'>
+					<b>{title}</b>
 				</p>
-				<p>
-					Director: <b>{director}</b>
+				<p className='text-center'>
+					<b>{director}</b>
 				</p>
-				<p>
-					Release year:
+				<p className='text-center'>
 					<b> {releaseYear}</b>
 				</p>
 			</div>
