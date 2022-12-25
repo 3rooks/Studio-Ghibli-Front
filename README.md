@@ -10,7 +10,7 @@
 
 ## Backend (recommended)
 
--   You have a backend application available in [Studio-Ghibli-Back](https://github.com/3rooks/Desafios-Backend)
+-   You have a backend application available in [Studio-Ghibli-Back](https://github.com/3rooks/Studio-Ghibli-Back)
 
 ## About
 
